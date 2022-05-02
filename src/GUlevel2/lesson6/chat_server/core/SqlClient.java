@@ -9,7 +9,7 @@ public class SqlClient {
     synchronized static void connect() {
         try {
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:W:\\JAVA\\GU_Java2_MOTUZOK\\src\\GUlevel2\\lesson6\\chat_server\\clients-db.sqlite");
+            connection = DriverManager.getConnection("jdbc:sqlite:chat-server/clients-db.sqlite");
             statement = connection.createStatement();
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);

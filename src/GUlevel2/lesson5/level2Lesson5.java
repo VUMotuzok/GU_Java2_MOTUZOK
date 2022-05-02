@@ -1,4 +1,4 @@
-package java.level2.lesson5;
+package GUlevel2.lesson5;
 
 import java.util.Arrays;
 
